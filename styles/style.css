@@ -29,6 +29,36 @@
     font-weight: 500 600;
 }
 
+body{
+  font-family: "Barlow Semi Condensed";
+  background: var(--neutral-grey-100);
+  font-size: var(--typography);
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 36px;
+}
+
+section{
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.autor{
+  display: flex;
+  gap: 16px;
+}
+.avatar{
+  width: 2.1rem;
+  border-radius: 50%;
+}
+.title{
+  font-weight: 600;
+}
+
 
 
 
