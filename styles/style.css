@@ -23,7 +23,7 @@
 @font-face {
   font-family: "Barlow Semi Condensed";
   src: url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
-  font-weight: 500 600;
+  font-weight: 500;
 }
 
 body {
@@ -41,9 +41,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   gap: 36px;
-
   width: 90%;
 }
 
@@ -126,4 +124,50 @@ section {
   font-style: italic;
   text-decoration: none;
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  body {
+    height: 100%;
+    padding-top: 52px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+  }
+  .card-5 {
+    grid-column: span 2;
+  }
+  .attribution {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  body {
+    height: 100%;
+    padding-top: 52px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .card-1 {
+    background-image: none;
+  }
+
+  .card-3 {
+    order: 5;
+  }
+
+  .attribution {
+    margin-bottom: 4rem;
+  }
 }
